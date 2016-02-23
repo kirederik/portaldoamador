@@ -1,3 +1,19 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+.demo-info {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.login-box-body {
+  color: $black;
+  .login-box-msg {
+    padding-bottom: 10px;
+  }
+
+}

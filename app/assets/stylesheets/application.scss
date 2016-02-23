@@ -10,11 +10,17 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require iCheck/square/blue
  *= require_self
+ *= require_tree .
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "AdminLTE/AdminLTE";
 @import "AdminLTE/skins/skin-blue";
+@import "variables";
 
+#flash-alert {
+  text-align: center;
+  color: $error;
+}
