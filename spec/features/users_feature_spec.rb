@@ -3,25 +3,18 @@ require 'capybara/rspec'
 
 RSpec.describe "Users", :type => :feature do
 
-  # let(:user_attr) {FactoryGirl.attributes_for(:user)}
   let(:user) {FactoryGirl.create(:user)}
 
   before(:each) do
     user.save!
   end
 
-  describe "userlist" do
-    it "should see a user list" do
-      login_as(user, :scope => :user)
-      visit "/users.json"
-      expect(page).to have_content user.email
+  describe "/login" do
+    before(:each) do
+      visit "/login"
     end
-  end
-
-  context "when in login page" do
-    describe "the signin process" do
-      it "signs me in" do
-        visit '/login'
+    context "when using the correct credentials" do
+      it "can sign in" do
         within("#session") do
           fill_in 'user_email', :with => user.email
           fill_in 'user_password', :with => user.password
@@ -29,6 +22,17 @@ RSpec.describe "Users", :type => :feature do
         click_button 'Log in'
         expect(page).to have_content 'Success'
       end
+    end
+
+    context "when using invalid credentials" do
+      it {
+        within("#session") do
+          fill_in 'user_email', :with => "foo@bar.com"
+          fill_in 'user_password', :with => "notuser"
+        end
+        click_button 'Log in'
+        expect(page).to have_content "Email ou senha inválidos."
+      }
     end
   end
 end
