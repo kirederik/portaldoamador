@@ -6,4 +6,13 @@ FactoryGirl.define do
     copynumber "12341234"
     password "Foobar123"
   end
+
+  factory :admin, class: User do
+    fullname "admin"
+    email "admin@admin.com"
+    phone "12341234123"
+    copynumber "admin"
+    password "Admin123"
+    admin true
+  end
 end
