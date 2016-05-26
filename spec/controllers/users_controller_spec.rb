@@ -14,13 +14,32 @@ RSpec.describe UsersController, :type => :controller do
       expect(response).to redirect_to("/")
     end
   end
-  fcontext "when logged as admin" do
+  context "when logged as admin" do
     before(:each) do
       fake_sign_in(admin)
     end
     it "can see the user list" do
       get :index, {format: "json"}
       expect(assigns(:users)).to eq([admin])
+    end
+
+    it "can create users" do
+      get :new
+      expect(response).to render_template(:new)
+
+      post :create, :user => {
+        fullname: "Test",
+        password: "Test123",
+        password_confirmation: "Test123",
+        phone: "12341234",
+        copynumber: "457389"
+      }
+      expect(response).to redirect_to(assigns(:user))
+      follow_redirect!
+
+      expect(response).to render_template(:show)
+      expect(response.body).to include("Usuário criado com sucesso")
+
     end
   end
 end
