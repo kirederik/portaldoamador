@@ -29,17 +29,13 @@ RSpec.describe UsersController, :type => :controller do
 
       post :create, :user => {
         fullname: "Test",
-        password: "Test123",
-        password_confirmation: "Test123",
+        email: "test@test.com",
+        password: "Test@123",
+        password_confirmation: "Test@123",
         phone: "12341234",
         copynumber: "457389"
       }
       expect(response).to redirect_to(assigns(:user))
-      follow_redirect!
-
-      expect(response).to render_template(:show)
-      expect(response.body).to include("Usuário criado com sucesso")
-
     end
   end
 end
