@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mysql2'
 gem 'devise'
 gem 'adminlte2-rails'
+gem "rails-i18n"
+gem "devise-i18n"
 
 
 # Use ActiveModel has_secure_password

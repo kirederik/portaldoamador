@@ -1,0 +1,16 @@
+pt-BR:
+  users:
+    new:
+      page_title: "Novo Usuário"
+    title: "Usuários"
+  actions:
+    new: "Novo"
+  activerecord:
+    attributes:
+      user:
+        fullname: "Nome Completo"
+        phone: "Telefone"
+        email: "Email"
+        copynumber: "Exemplar"
+        password: "Senha"
+        password_confirmation: "Confirme a senha"

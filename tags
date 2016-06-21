@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/fc823dd/
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	module:Simulados
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ConfirmationsController	app/controllers/users/confirmations_controller.rb	/^class Users::ConfirmationsController < Devise::ConfirmationsController$/;"	c	module:Users
+ControllerHelpers	spec/support/controller_helpers.rb	/^module ControllerHelpers$/;"	m
+ControllerMacros	spec/support/controller_macros.rb	/^module ControllerMacros$/;"	m
+DeviseCreateUsers	db/migrate/20160129211334_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
+HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
+HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
+OmniauthCallbacksController	app/controllers/users/omniauth_callbacks_controller.rb	/^class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController$/;"	c	module:Users
+PasswordsController	app/controllers/users/passwords_controller.rb	/^class Users::PasswordsController < Devise::PasswordsController$/;"	c	module:Users
+RegistrationsController	app/controllers/users/registrations_controller.rb	/^class Users::RegistrationsController < Devise::RegistrationsController$/;"	c	module:Users
+SessionsController	app/controllers/users/sessions_controller.rb	/^class Users::SessionsController < Devise::SessionsController$/;"	c	module:Users
+Simulados	config/application.rb	/^module Simulados$/;"	m
+UnlocksController	app/controllers/users/unlocks_controller.rb	/^class Users::UnlocksController < Devise::UnlocksController$/;"	c	module:Users
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+admin_sign_in	spec/support/controller_helpers.rb	/^  def admin_sign_in$/;"	f	module:ControllerHelpers
+change	db/migrate/20160129211334_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+create	app/controllers/users/sessions_controller.rb	/^  def create$/;"	f	class:Users.SessionsController
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+destroy	app/controllers/users/sessions_controller.rb	/^  def destroy$/;"	f	class:Users.SessionsController
+devise_mapping	app/helpers/users_helper.rb	/^  def devise_mapping$/;"	f	module:UsersHelper
+fake_sign_in	spec/support/controller_helpers.rb	/^  def fake_sign_in(resource_or_scope = :user, options = {})$/;"	f	module:ControllerHelpers
+fake_sign_out	spec/support/controller_helpers.rb	/^  def fake_sign_out(scope = :user)$/;"	f	module:ControllerHelpers
+index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
+index	app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
+isAdmin	app/controllers/application_controller.rb	/^  def isAdmin(&blk)$/;"	f	class:ApplicationController
+login_admin	spec/support/controller_macros.rb	/^  def login_admin$/;"	f	module:ControllerMacros
+login_user	spec/support/controller_macros.rb	/^  def login_user$/;"	f	module:ControllerMacros
+new	app/controllers/users/sessions_controller.rb	/^  def new$/;"	f	class:Users.SessionsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+resource	app/helpers/users_helper.rb	/^  def resource$/;"	f	module:UsersHelper
+resource_name	app/helpers/users_helper.rb	/^  def resource_name$/;"	f	module:UsersHelper
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+user_params	app/controllers/users_controller.rb	/^  def user_params$/;"	f	class:UsersController
+user_sign_in	spec/support/controller_helpers.rb	/^  def user_sign_in$/;"	f	module:ControllerHelpers
