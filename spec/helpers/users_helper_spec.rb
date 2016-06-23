@@ -11,4 +11,9 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe UsersHelper, type: :helper do
+  describe "#resource_name" do
+    it "returns user" do
+      expect(helper.resource_name).to eq(:user)
+    end
+  end
 end
