@@ -7,23 +7,21 @@
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	module:Simulados
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
-ConfirmationsController	app/controllers/users/confirmations_controller.rb	/^class Users::ConfirmationsController < Devise::ConfirmationsController$/;"	c	module:Users
+ChangeNameToUsers	db/migrate/20160627220623_change_name_to_users.rb	/^class ChangeNameToUsers < ActiveRecord::Migration$/;"	c
 ControllerHelpers	spec/support/controller_helpers.rb	/^module ControllerHelpers$/;"	m
 ControllerMacros	spec/support/controller_macros.rb	/^module ControllerMacros$/;"	m
 DeviseCreateUsers	db/migrate/20160129211334_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
 HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
 HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
-OmniauthCallbacksController	app/controllers/users/omniauth_callbacks_controller.rb	/^class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController$/;"	c	module:Users
 PasswordsController	app/controllers/users/passwords_controller.rb	/^class Users::PasswordsController < Devise::PasswordsController$/;"	c	module:Users
-RegistrationsController	app/controllers/users/registrations_controller.rb	/^class Users::RegistrationsController < Devise::RegistrationsController$/;"	c	module:Users
 SessionsController	app/controllers/users/sessions_controller.rb	/^class Users::SessionsController < Devise::SessionsController$/;"	c	module:Users
 Simulados	config/application.rb	/^module Simulados$/;"	m
-UnlocksController	app/controllers/users/unlocks_controller.rb	/^class Users::UnlocksController < Devise::UnlocksController$/;"	c	module:Users
 User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
 UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
 UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
 admin_sign_in	spec/support/controller_helpers.rb	/^  def admin_sign_in$/;"	f	module:ControllerHelpers
 change	db/migrate/20160129211334_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20160627220623_change_name_to_users.rb	/^  def change$/;"	f	class:ChangeNameToUsers
 create	app/controllers/users/sessions_controller.rb	/^  def create$/;"	f	class:Users.SessionsController
 create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
 destroy	app/controllers/users/sessions_controller.rb	/^  def destroy$/;"	f	class:Users.SessionsController
@@ -33,6 +31,7 @@ fake_sign_out	spec/support/controller_helpers.rb	/^  def fake_sign_out(scope = :
 index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
 index	app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
 isAdmin	app/controllers/application_controller.rb	/^  def isAdmin(&blk)$/;"	f	class:ApplicationController
+is_active	app/helpers/application_helper.rb	/^  def is_active(ctrl)$/;"	f	module:ApplicationHelper
 login_admin	spec/support/controller_macros.rb	/^  def login_admin$/;"	f	module:ControllerMacros
 login_user	spec/support/controller_macros.rb	/^  def login_user$/;"	f	module:ControllerMacros
 new	app/controllers/users/sessions_controller.rb	/^  def new$/;"	f	class:Users.SessionsController

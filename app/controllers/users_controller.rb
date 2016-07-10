@@ -13,9 +13,7 @@ class UsersController < ApplicationController
   def new
     isAdmin do
       @user = User.new
-      respond_to do |format|
-        format.html
-      end
+      @user.copynumber = ""
     end
   end
 
@@ -27,8 +25,7 @@ class UsersController < ApplicationController
           format.html { redirect_to @user, notice: 'Usuário criado com sucesso' }
           format.json { render action: 'show', status: :created, location: @user }
         else
-          puts @user.errors.full_messages
-          format.html { render action: 'new' }
+          format.html { render :new }
           format.json { render json: @user.errors, status: :unprocessable_entity }
         end
       end

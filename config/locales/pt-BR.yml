@@ -1,11 +1,22 @@
 pt-BR:
   users:
+    create:
+      page_title: "Novo Usuário"
     new:
       page_title: "Novo Usuário"
     title: "Usuários"
   actions:
     new: "Novo"
   activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "muito curta (mínimo %{count} caracteres)"
+              confirmation: "Senhas nao combinam"
+            email:
+              invalid: "inválido"
     attributes:
       user:
         fullname: "Nome Completo"
@@ -13,4 +24,4 @@ pt-BR:
         email: "Email"
         copynumber: "Exemplar"
         password: "Senha"
-        password_confirmation: "Confirme a senha"
+        password_confirmation: "Confirmação de Senha"
