@@ -13,7 +13,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  # root 'home#index'
+  authenticated :user do
+    root to: 'home#index', as: :authenticated_root
+  end
+  root to: redirect('/users/sign_in')
 
   resources :users
   # Example of regular route:

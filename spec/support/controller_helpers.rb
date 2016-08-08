@@ -33,5 +33,4 @@ module ControllerHelpers
     allow(request.env['warden']).to receive(:authenticate!).and_throw(:warden, {:scope => scope})
     allow(controller).to receive("current_#{scope}").and_return(nil)
   end
-
 end

@@ -58,12 +58,12 @@ RSpec.describe "User", :type => :feature do
 
           it "shows invalid email message" do
             within("#new_user") do
-              fill_in email_field, :with => "invalid@email"
+              fill_in email_field, :with => "invalidemail"
             end
             click_button "Salvar"
             expect(page).to have_content "Email inválido"
             expect(find_field(name_field).value).to eq(user.fullname)
-            expect(find_field(email_field).value).to eq("invalid@email")
+            expect(find_field(email_field).value).to eq("invalidemail")
             expect(find_field(phone_field).value).to eq(user.phone)
             expect(find_field(copy_field).value).to eq(user.copynumber)
             expect(find_field(pass_field).value).to be_nil
